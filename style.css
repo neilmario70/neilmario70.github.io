@@ -1,0 +1,1058 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Gym One Page Template
+    Template URI: http://radiustheme.com/
+    Description:Gym Point One Page Responsive HTML5 Template
+    Author:Radius Theme
+    Author URI: http://radiustheme.com/
+    Version: 1.0
+    
+    All files, unless otherwise stated, are released under the GNU General Public License
+    version 3.0 (http://www.your-site.com/index.html)
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. Theme Default CSS (body, link color, section etc)
+    2. Header Area Sytling 
+      2.1 Stiky Menu Styling
+      2.2 Scrolling Nav Styling
+    3.Slider Area Styling  
+    4.About Us Area Start Here
+    5. Our Classes Area Start Here 
+    6.Trainers Section Area Start Here
+    7.Gallery Section Area Start Here
+    8.Blog Section Area Start Here
+    9.Price Section Area Start Here
+    10.Contact Section Area Start Here
+-----------------------------------------------------------------------------------*/
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+html,
+body {
+  height: 100%;
+}
+.wrapper-area {
+  overflow: hidden;
+}
+.floatleft {
+  float: left;
+}
+.floatright {
+  float: right;
+}
+.alignleft {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.alignright {
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+.aligncenter {
+  display: block;
+  margin: 0 auto 15px;
+}
+a:focus {
+  outline: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.fix {
+  overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 0 25px;
+}
+h1{
+  font-size: 67px;
+}
+h2{
+  font-size: 41px;
+}
+h3{
+  font-size: 30px;
+}
+
+a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #666666;
+  vertical-align: baseline;
+}
+/*-------------------------------------
+2. Header Area Sytling  
+---------------------------------------*/
+.mobile-menu-area {
+  display: none;
+}
+.header-area {
+  margin: 30px 0;
+  position: absolute;
+  z-index: 99;
+  margin: 20px auto;
+  left: 0;
+  right: 0;
+}
+.main-menu-area ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-menu-area ul li.current {
+  background: #F00;
+}
+.main-menu-area ul li {
+  display: inline-block;
+}
+.main-menu-area ul li a {
+  color: #ffffff;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  outline: medium none;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+}
+.main-menu-area ul li a:hover {
+  background: #F00;
+}
+/*----------------------------------
+   2.1 Stiky Menu Styling 
+   -----------------------------------*/
+div#sticker {
+  background: transparent;
+    padding: 10px;
+}
+.stick {
+  position: fixed;
+  top: 0px;
+  z-index: 9;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8) !important;
+  margin: 0;
+}
+/*---------------------------------
+  2.2 Scrolling Nav Styling 
+  ---------------------------------*/
+#scrollUp {
+  background: #F00;
+  bottom: 100px;
+  color: #ffffff !important;
+  display: block;
+  font-size: 25px;
+  height: 40px;
+  line-height: 0;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  text-decoration: none !important;
+  transition: all 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+  width: 50px;
+  z-index: 1000;
+}
+#scrollUp:hover {
+  background: rgba(18, 192, 84, 0.5);
+}
+#scrollUp i {
+  display: block;
+  padding-top: 5px;
+}
+/*-------------------------------------
+3.Slider Area Styling  
+---------------------------------------*/
+.slider-area {
+  position: relative;
+}
+.slider-area .big-title {
+  color: #ffffff;
+  font-size: 72px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.slider-area .big-title span.title-builder {
+  color: #F00;
+}
+.slider-area .small-content {
+  padding: 40px 240px;
+  text-align: center;
+}
+.slider-area .button {
+  color: #d1d1d1;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 60%;
+  white-space: normal;
+}
+.slider-area .button .btn-success {
+  background-color: #F00;
+  border-color: #33e179;
+  padding: 15px 35px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 0;
+  outline: none;
+}
+.slider-area .button .btn-success:hover {
+  background-color: rgb(3, 135, 56);
+  border-color: rgb(3, 135, 56);
+  color: #ffffff;
+}
+.slider-area .button2 {
+  color: #d1d1d1;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  bottom: 15%;
+  white-space: normal;
+}
+.slider-area .button2 .btn-success {
+  background-color: #F00;
+  border-color: #33e179;
+  padding: 15px 35px;
+}
+.slider-area .button2 .btn-success:hover {
+  background-color: #449d44;
+  border-color: #398439;
+  color: #ffffff;
+}
+.slider-area .down {
+  text-align: center;
+}
+.slider-area .down li {
+  display: inline-block;
+}
+.slider-area .down li img {
+  position: inherit;
+}
+/*-------------------------------------
+4.About Us Area Start Here 
+---------------------------------------*/
+.about-area {
+  background: rgba(0, 0, 0, 0) url("img/about_bg.jpg") no-repeat scroll center top / cover;
+  padding: 90px 0 0;
+}
+.about-area .about-content h2 {
+  
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+.about-area .about-content h2 span {
+  color: #F00;
+}
+.about-area .about-content p {
+  color: #7c7c7c;
+ }
+.about-area .about-content .read-more {
+  margin: 30px 0;
+}
+.about-area .about-content .read-more a {
+  padding: 10px 25px;
+  transition: all 0.5s ease 0s;
+  color:#F00;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+  border: 2px solid #F00;
+  text-decoration: none;
+}
+.about-area .about-content .read-more a:hover {
+  background: #F00;
+  color: #ffffff;
+}
+/*-------------------------------------
+5. Our Classes Area Start Here 
+---------------------------------------*/
+.our-class {
+  padding: 90px 0 0;
+}
+.our-class h2 {
+  
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 0 60px 0;
+  text-align: center;
+}
+.our-class .class-tab {
+  text-align: center;
+}
+.our-class .class-tab li {
+  display: inline-block;
+  background: #F00;
+  position: relative;
+  margin: 0 -2px;
+  transition: all 0.5s ease 0s;
+}
+.our-class .class-tab li.active {
+  background: #038738;
+}
+.our-class .class-tab li.active a:after {
+  border-color: #038738 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  border-style: solid;
+  border-width: 12px 24px 0;
+  bottom: -5px;
+  content: "";
+  height: 0;
+  left: -40px;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 0;
+}
+.our-class .class-tab li:hover {
+  background: #038738;
+}
+.our-class .class-tab li:first-child:before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 84px 50px 0 0;
+  border-color: #ffffff transparent transparent transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+}
+.our-class .class-tab li:last-child:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 84px 50px;
+  border-color: transparent transparent #ffffff transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: "";
+}
+.our-class .class-tab li:before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 84px 50px 0 0;
+  border-color: #fff transparent transparent transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+}
+.our-class .class-tab li:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 84px 50px;
+  border-color: transparent transparent #fff transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: "";
+}
+.our-class .class-tab li a {
+  color: #ffffff;
+  display: block;
+  font-size: 18px;
+  padding: 28px 70px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+.our-class .tab-content {
+  margin: 50px 0 40px;
+  display: block;
+  float: left;
+  width: 100%;
+}
+.our-class .tab-content img {
+  padding: 5px;
+  border: 2px solid #dddddd;
+  margin: 2px;
+  background: #ededed;
+}
+.our-class .tab-content .tab-right-content h3.three-title {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+}
+.our-class .tab-content .tab-right-content h3.three-title a{
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration:none;
+  display:block;
+  transition: all 0.5s ease 0s;
+}
+.our-class .tab-content .tab-right-content h3.three-title a:HOVER{
+  color: #F00;
+}
+.our-class .tab-content .tab-right-content h3.three-title a:HOVER SPAN{
+  color: #000000;  
+  transition: all 0.5s ease 0s;
+}
+.our-class .tab-content .tab-right-content h3.three-title span {
+  color: #F00;
+}
+.our-class .tab-content p {
+  color: #7c7c7c;
+}
+.our-class .tab-content .read-more {
+  margin: 30px 0;
+}
+.our-class .tab-content .read-more a {
+  border: 2px solid #F00;
+  color: #F00;
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+}
+.our-class .tab-content .read-more a:hover {
+  background: #F00 none repeat scroll 0 0;
+  color: #ffffff;
+}
+/*-------------------------------------
+6.Trainers Section Area Start Here 
+---------------------------------------*/
+.section-tilte-area h2 {
+  font-weight: bold;
+  margin: 0px 0 60px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.trainer-area {
+  background: url(img/trainers/trainer-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 90px 0 0;
+}
+.trainer-area .section-tilte-area h2 {
+  color: #ffffff;  
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.trainer-area ul.tabmenu-list {
+  text-align: center;
+}
+.trainer-area ul.tabmenu-list li {
+  width: 200px;
+  margin: auto;
+}
+.trainer-area ul.tabmenu-list li.active a img {
+  border: 10px solid #F00;
+}
+.trainer-area ul.tabmenu-list li a {
+  display: block;
+}
+.trainer-area ul.tabmenu-list li a img {
+  width: 100%;
+  border: 10px solid #244431;
+  -webkit-border-top-right-radius: 50%;
+  -webkit-border-bottom-right-radius: 50%;
+  -webkit-border-bottom-left-radius: 50%;
+  -webkit-border-top-left-radius: 50%;
+  -moz-border-radius-topright: 50%;
+  -moz-border-radius-bottomright: 50%;
+  -moz-border-radius-bottomleft: 50%;
+  -moz-border-radius-topleft: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  transition: all 0.5s ease 0s;
+}
+.trainer-area ul.tabmenu-list li a img:hover {
+  border: 10px solid #F00;
+}
+.trainer-area .owl-prev {
+  left: -80px;
+  position: absolute;
+  top: 80px;
+  background: transparent !important;
+}
+.trainer-area .owl-prev i {
+  color: #ffffff !important;
+  font-size: 35px !important;
+  font-weight: bold;
+}
+.trainer-area .owl-next {
+  right: -80px;
+  position: absolute;
+  top: 80px;
+  background: transparent !important;
+}
+.trainer-area .owl-next i {
+  color: #ffffff !important;
+  font-size: 35px !important;
+  font-weight: bold;
+}
+.trainer-area .tabmenu-content-area {
+  padding: 30px 0 0;
+}
+.trainer-area .tabmenu-content-area .trainerimg .tabcontent-feature-image {
+  position: relative;
+  margin: 0 20px;
+  border-left: 70px solid rgba(0, 0, 0, 0);
+  border-right: 70px solid rgba(0, 0, 0, 0);
+  border-top: 478px solid #F00;
+  height: 0;
+}
+.trainer-area .tabmenu-content-area .trainerimg .tabcontent-feature-image:hover .social-media {
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+  right: -10px;
+}
+.trainer-area .tabmenu-content-area .trainerimg .tabcontent-feature-image a img {
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.trainer-area .tabmenu-content-area .trainerimg .tabcontent-feature-image .social-media {
+  position: absolute;
+  top: -400px;
+  right: 50px;
+  transform: scale(0);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease 0s;
+}
+.trainer-area .tabmenu-content-area .trainerimg .tabcontent-feature-image .social-media ul li {
+  margin: 10px;
+}
+.trainer-area .tabmenu-content-area .trainerimg .tabcontent-feature-image .social-media ul li a {
+  display: block;
+}
+.trainer-area .tabmenu-content-area .trainerimg .tabcontent-feature-image .social-media ul li a i {
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid #ffffff;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 40px;
+  color: #ffffff;
+  transition: all 0.5s ease 0s;
+}
+.trainer-area .tabmenu-content-area .trainerimg .tabcontent-feature-image .social-media ul li a i:hover {
+  background: #244431;
+  border: 1px solid #244431;
+  transform: rotateY(360deg);
+  -webkit-transform: rotateY(360deg);
+}
+.trainer-area .tabmenu-content-area .trainer-content-area h3 {
+  margin: 0 0 12PX;
+}
+.trainer-area .tabmenu-content-area .trainer-content-area h3 a {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.5s ease 0s;
+  font-weight: 400;
+}
+.trainer-area .tabmenu-content-area .trainer-content-area h4 {
+  color: #F00;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: capitalize;
+  margin: 0 0 10PX;
+}
+.trainer-area .tabmenu-content-area .trainer-content-area p {
+  color: #ffffff;
+ }
+.trainer-area .tabmenu-content-area .skill-area {
+  position: relative;
+  overflow: hidden;
+}
+.trainer-area .tabmenu-content-area .skill-area p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.trainer-area .tabmenu-content-area .skill-area .progress {
+  margin: 0;
+}
+.trainer-area .tabmenu-content-area .skill-area .progress .progress-bar .progress-label {
+  font-size: 16px;
+}
+.trainer-area .tabmenu-content-area .tab-pane {
+  display: none;
+}
+.trainer-area .tabmenu-content-area .tab-pane.active {
+  display: block;
+}
+/*-------------------------------------
+7.Gallery Section Area Start Here 
+---------------------------------------*/
+.gallery-area {
+  padding: 90px 0 0;
+}
+.gallery-area .section-tilte-area h2 {
+  color: #000000;
+  margin-bottom: 60px;
+}
+.gallery-area .portfolioFilter {
+  text-align: center;
+}
+.gallery-area .portfolioFilter a {
+  margin-right: 5px;
+  color: #5b5b5b;
+  text-decoration: none;
+  border: 1px solid #F00;
+  transition: all 0.5s ease 0s;
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 16px;
+}
+.gallery-area .portfolioFilter a.current {
+  color: #ffffff;
+  background: #F00;
+}
+.gallery-area .portfolioFilter a:hover {
+  background: #F00;
+  color: #ffffff;
+}
+.gallery-area .isotope-item {
+  z-index: 2;
+}
+.gallery-area .isotope-hidden.isotope-item {
+ 
+  z-index: 1;
+}
+.gallery-area .isotope,
+.gallery-area .isotope .isotope-item {
+  transition: all 0.5s ease 0s;
+}
+.gallery-area .isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  transition-property: height, width;
+}
+.gallery-area .isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  transition-property: transform, opacity;
+}
+.gallery-area .portfolioContainer {
+  margin: 49px 0 0;
+}
+.gallery-area .portfolioContainer .single-item {
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+}
+.gallery-area .portfolioContainer .single-item .item-overley {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease 0s;
+  display: block;
+  transform: scale(0.5);
+  z-index: 1;
+}
+.gallery-area .portfolioContainer .single-item .item-overley .item-content {
+  text-align: center;
+  padding: 60px 0;
+  z-index: 99;
+}
+.gallery-area .portfolioContainer .single-item .item-overley .item-content h3 {
+  margin: 0;
+}
+.gallery-area .portfolioContainer .single-item .item-overley .item-content h3 a {
+  color: #F00;
+  text-decoration: none;
+  transition: all 0.5s ease 0s;
+  display: block;
+  font-size: 22px;
+}
+.gallery-area .portfolioContainer .single-item .item-overley .item-content h3 a:hover {
+  color: #dddddd;
+}
+.gallery-area .portfolioContainer .single-item .item-overley .item-content p {
+  color: #ffffff;
+  margin: 0;
+  font-style: italic;
+}
+.gallery-area .portfolioContainer .single-item .item-overley .item-content ul li {
+  display: inline-block;
+}
+.gallery-area .portfolioContainer .single-item .item-overley .item-content ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.5s ease 0s;
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+}
+.gallery-area .portfolioContainer .single-item:hover .item-overley {
+  opacity: 1;
+  transform: scaleY(1);
+}
+.gallery-area .portfolioContainer .single-item:hover .item-overley .item-content ul li a i {
+  display: block;
+}
+.gallery-area .portfolioContainer .single-item:hover .item-overley .item-content ul li a i:hover {
+  color: #F00;
+}
+/*-------------------------------------
+8.Blog Section Area Start Here 
+---------------------------------------*/
+.blog-area {
+  background: url(img/blog/blog_bg.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 90px 0;
+}
+.blog-area .section-tilte-area h2 {
+  color: #000000;
+  margin: 0 0 60px;
+}
+.blog-area .blog-content-area .single-blog-area {
+  border-bottom: 1px solid #dddddd;
+  margin: 0 15px;
+  padding-bottom: 20px;
+}
+
+.blog-area .blog-content-area .single-blog-area a img:hover {
+  opacity: .8;
+}
+.blog-area .blog-content-area .single-blog-area h3 {
+  margin: 0;
+}
+.blog-area .blog-content-area .single-blog-area h3 a {
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.5s ease 0s;
+  display: block;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 25px 0 16px;
+  font-weight: 400;
+}
+.blog-area .blog-content-area .single-blog-area h3 a:hover {
+  color: #F00;
+}
+.blog-area .blog-content-area .single-blog-area ul li {
+  color: #7c7c7c;
+  display: inline-block;
+  font-size: 15px;
+  margin-right: 10px;
+}
+.blog-area .blog-content-area .single-blog-area ul li span {
+  font-weight: bold;
+  color: #F00;
+  margin: 0 2px;
+  cursor: pointer;
+}
+.blog-area .blog-content-area .single-blog-area ul li span:hover {
+  color: #333333;
+}
+.blog-area .blog-content-area .single-blog-area p {
+  margin: 10px 0;
+  text-align: justify;
+  color: #666666;
+}
+.blog-area .blog-content-area .single-blog-area .read-more {
+  text-align: right;
+  margin: 30px 0;
+}
+.blog-area .blog-content-area .single-blog-area .read-more a {
+  border: 2px solid #F00;
+  color: #F00;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+}
+.blog-area .blog-content-area .single-blog-area .read-more a:hover {
+  color: #ffffff;
+  background: #F00;
+}
+.blog-area .owl-prev {
+  border-radius: 0 !important;
+  height: 40px;
+  line-height: 39px;
+  position: absolute;
+  left: -80px;
+  top: 30%;
+  width: 40px;
+  border: 2px solid #F00 !important;
+  background: transparent !important;
+}
+.blog-area .owl-prev i {
+  font-size: 25px;
+  color: #F00 !important;
+}
+.blog-area .owl-prev:hover {
+  background: #F00 !important;
+}
+.blog-area .owl-prev:hover i {
+  font-size: 25px;
+  color: #ffffff !important;
+}
+.blog-area .owl-next {
+  border-radius: 0 !important;
+  height: 40px;
+  line-height: 39px;
+  position: absolute;
+  right: -80px;
+  top: 30%;
+  width: 40px;
+  border: 2px solid #F00 !important;
+  background: transparent !important;
+}
+.blog-area .owl-next i {
+  font-size: 25px;
+  color: #F00 !important;
+}
+.blog-area .owl-next:hover {
+  background: #F00 !important;
+}
+.blog-area .owl-next:hover i {
+  font-size: 25px;
+  color: #ffffff !important;
+}
+/*-------------------------------------
+9.Price Section Area Start Here 
+---------------------------------------*/
+.price-table-area {
+  background: url(img/price/price-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 90px 0;
+}
+.price-table-area .section-tilte-area h2 {
+  color: #ffffff;
+  margin: 0px 0 60px;
+}
+.price-table-area .price-member-plan .single-member-price {
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-topleft: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 40px 0;
+  background: #ffffff;
+  text-align: center;
+}
+.price-table-area .price-member-plan .single-member-price h2 {
+  font-size: 30px;
+  margin: 0;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.price-table-area .price-member-plan .single-member-price h2 span {
+  color: #6a6a6a;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.price-table-area .price-member-plan .single-member-price h3 {
+  font-size: 60px;
+  margin: 0;
+  color: #F00;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 90px;
+}
+.price-table-area .price-member-plan .single-member-price h3 span {
+  color: #6a6a6a;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.price-table-area .price-member-plan .single-member-price .table-features ul li {
+  border-top: 1px solid #dddddd;
+  padding: 10px 0;
+}
+.price-table-area .price-member-plan .single-member-price .table-features ul li:nth-child(2n+2) {
+  background: #f2f2f2;
+}
+.price-table-area .price-member-plan .single-member-price .table-features .purches-now {
+  margin: 20px 0;
+}
+.price-table-area .price-member-plan .single-member-price .table-features .purches-now a {
+  background: #F00;
+  transition: all 0.5s ease 0s;
+  display: inline-block;
+  padding: 10px 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.price-table-area .price-member-plan .single-member-price .table-features .purches-now a:hover {
+  background: #038738;
+}
+.price-table-area .price-member-plan .single-member-price.second-plan {
+  position: relative;
+}
+.price-table-area .price-member-plan .single-member-price.second-plan:after {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: -9px;
+  height: 100px;
+  width: 100px;
+  background: url(img/price/popular.png) no-repeat;
+  display: block;
+  background-size: cover;
+  background-position: center center;
+}
+/*-------------------------------------
+ 10.Contact Section Area Start Here 
+ --------------------------------------*/
+.contact-us-area {
+  padding: 90px 0 0;
+}
+.contact-us-area .section-tilte-area h2 {
+  color: #000000;
+}
+.contact-us-area .contact-us-top #googleMap {
+  margin-bottom: 65px;
+}
+.contact-us-area .contact-form {
+  margin-bottom: 55px;
+}
+.contact-us-area .contact-form input {
+  height: 60px;
+  margin: 10px 0;
+  border: 1px solid #F00;
+  font-size: 20px;
+}
+.contact-us-area .contact-form textarea {
+  margin: 10px 0;
+  border: 1px solid #F00;
+  font-size: 20px;
+}
+.contact-us-area .contact-form .btn-send {
+  background: #F00;
+  border: none;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 55px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+  margin: 20px 0;
+}
+.contact-us-area .contact-form .btn-send:hover {
+  background: #038738;
+}
+.footer-area {
+  background: url(img/footer-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 50px 0;
+}
+.footer-area .footer-left-text {
+  margin-top: 35px;
+}
+.footer-area .footer-left-text p a {
+  text-align: left;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-area .footer-right-social-media {
+  text-align: right;
+}
+.footer-area .footer-right-social-media ul li {
+  display: inline-block;
+}
+.footer-area .footer-right-social-media ul li a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease 0s;
+}
+.footer-area .footer-right-social-media ul li a:hover {
+  color: #dddddd;
+}
+.footer-area .footer-right-social-media ul li a:hover i {
+  color: #ffffff;
+}
+.footer-area .footer-right-social-media ul li a i {
+  display: block;
+  font-size: 25px;
+  color: #F00;
+  transition: all 0.5s ease 0s;
+}
+.footer-area .contact-address {
+  padding: 50px 0;
+}
+.footer-area .contact-address .single-contact p {
+  font-size: 16px;
+  color: #ffffff;
+}
+.footer-area .contact-address .single-contact p i {
+  width: 50px;
+  height: 50px;
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 50px;
+  background: #F00;
+  text-align: center;
+  margin-right: 10px;
+}
